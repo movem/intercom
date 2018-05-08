@@ -8,8 +8,18 @@
     "email": "dciesielski87@gmail.com"
   }],
   "require": {
-    "php": ">= 5.6",
+    "php": ">=7.1",
     "intercom/intercom-php": "^3.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Darkin1\\Intercom\\IntercomServiceProvider"
+      ],
+      "aliases": {
+        "Intercom": "Darkin1\\Intercom\\Facades\\Intercom"
+      }
+    }
   },
   "autoload": {
     "psr-4": {
